@@ -1,0 +1,13 @@
+{
+    "schemaVersion": 1,
+    "authors": [
+        "Wrath360"
+    ],
+    "environment": "*",
+    "id": "hero_vs_villan_emerald1",
+    "version": "1.0.0",
+    "name": "Heros Vs Villans:Emerald",
+    "description": "Hero Vs Villan Fighting Addon",
+    "icon": "logo.png",
+    "license": "All rights reserved"
+}

@@ -1,0 +1,21 @@
+modLoader="lowcodefml"
+showAsResourcePack = false
+loaderVersion="[47,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="hero_vs_villan_emerald1"
+version="1.0.0"
+logoFile = "logo.png"
+logoBlur = false
+displayName="Heros Vs Villans:Emerald"
+description='''
+Hero Vs Villan Fighting Addon
+'''
+
+[[dependencies.hero_vs_villan_emerald1]]
+modId = "palladium"
+mandatory = true
+versionRange = "[4.4.1,)"
+ordering = "NONE"
+side = "BOTH"

@@ -67,13 +67,13 @@
             "list_index": -1,
             "gui_position": "null",
             "description": "null",
-            "texture": "minecraft:textures/entity/zombie/drowned.png",
+            "texture": "hero_vs_villan_emerald1:textures/skins/titanium_tech_skin_new.png",
             "model_type": "keep",
             "priority": 50,
             "conditions": {
                 "enabling": [                {
                                     "type": "palladium:has_tag",
-                                    "tag": "example_tag"
+                                    "tag": "titanium_tech_suit_on"
                                 }],
                 "unlocking": []
             }

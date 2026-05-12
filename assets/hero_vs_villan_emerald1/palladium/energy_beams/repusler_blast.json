@@ -1,0 +1,38 @@
+[
+    {
+        "type": "palladium:laser",
+        "body_part": "right_arm",
+        "glow_color": "#0F0050",
+        "core_color": "#00EEFF",
+        "rainbow": false,
+        "glow_opacity": 0.5,
+        "core_opacity": 1,
+        "bloom": 2,
+        "size": 2.5,
+        "normal_transparency": false,
+        "rotation": 360,
+        "rotation_speed": 2,
+        "visibility": {
+            "first_person": true,
+            "third_person": false
+        }
+    },
+        {
+        "type": "palladium:laser",
+        "body_part": "right_arm",
+        "glow_color": "#0F0050",
+        "core_color": "#00EEFF",
+        "rainbow": false,
+        "glow_opacity": 0.5,
+        "core_opacity": 1,
+        "bloom": 2,
+        "size": 2.5,
+        "normal_transparency": false,
+        "rotation": 360,
+        "rotation_speed": 2,
+        "visibility": {
+            "first_person": false,
+            "third_person": true
+        }
+    }
+]

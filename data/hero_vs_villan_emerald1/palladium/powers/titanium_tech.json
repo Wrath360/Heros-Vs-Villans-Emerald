@@ -2,33 +2,87 @@
     "name": "Titanium Tech",
     "persistent_data": true,
     "background": "palladium:textures/block/titanium_block.png",
-    "icon": "palladium:titanium_ingot",
+    "icon": "hero_vs_villan_emerald1:textures/icons/titanium_tech_palladium_icon_kilonova.png",
     "gui_display_type": "tree",
     "abilities": {
         "Beam": {
             "type": "palladium:energy_beam",
-            "icon": "minecraft:cyan_stained_glass",
+            "icon": "hero_vs_villan_emerald1:textures/icons/titanium_tech_palladium_reactor_icon_kilonova.png",
             "title": "Reactor Beam",
             "bar_color": "light_blue",
             "list_index": 4,
-            "gui_position": [-1,5],
             "description": "A Beam Orginating From the Chest",
             "energy_beam": "hero_vs_villan_emerald1:reactor_beam",
             "damage": 5,
             "max_distance": 30,
             "speed": 1,
-            "set_on_fire_seconds": 2,
-            "cause_fire": true,
-            "smelt_blocks": true,
-            "commands_on_block_hit": [
-                "setblock ~ ~ ~ minecraft:fire keep"
-            ],
+            "set_on_fire_seconds": 0,
+            "cause_fire": false,
+            "smelt_blocks": false,
+            "commands_on_block_hit": [],
             "commands_on_entity_hit": [],
             "conditions": {
                 "enabling": [
                     {
                         "type": "palladium:held",
                         "cooldown": 100,
+                        "key_type": "key_bind",
+                        "needs_empty_hand": false
+                    }
+                ],
+                "unlocking": [
+                    {
+                        "type": "palladium:ability_unlocked",
+                        "power": "null",
+                        "ability": "Blast"
+                    }
+                ]
+            }
+        },
+        "Flight": {
+            "type": "palladium:attribute_modifier",
+            "icon": "minecraft:iron_chestplate",
+            "title": "Flight",
+            "bar_color": "light_blue",
+            "hidden": false,
+            "hidden_in_bar": true,
+            "list_index": -1,
+            "gui_position": "null",
+            "description": "Take to the skys.",
+            "attribute": "palladium:flight_speed",
+            "amount": 1,
+            "operation": 0,
+            "uuid": "498be4fb-af04-42f2-8948-e6ccdc0d99e1",
+            "conditions": {
+                "enabling": [],
+                "unlocking": []
+            }
+        },
+        "Blast": {
+            "type": "palladium:energy_beam",
+            "icon": "minecraft:blaze_rod",
+            "title": "Repusler Blast",
+            "bar_color": "light_blue",
+            "hidden": false,
+            "hidden_in_bar": false,
+            "list_index": 3,
+            "gui_position": "null",
+            "description": "Fire a quick blast From your hand.",
+            "energy_beam": "hero_vs_villan_emerald1:repusler_blast",
+            "damage_type": "null",
+            "damage": 7,
+            "max_distance": 35,
+            "speed": 0.2,
+            "set_on_fire_seconds": 0,
+            "cause_fire": false,
+            "smelt_blocks": false,
+            "commands_on_block_hit": [],
+            "commands_on_entity_hit": [],
+            "conditions": {
+                "enabling": [
+                    {
+                        "type": "palladium:held",
+                        "cooldown": 5,
                         "key_type": "key_bind",
                         "needs_empty_hand": false
                     }

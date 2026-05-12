@@ -5,6 +5,170 @@
     "icon": "hero_vs_villan_emerald1:textures/icons/titanium_tech_palladium_icon_kilonova.png",
     "gui_display_type": "tree",
     "abilities": {
+        "Start up Titanium Tech": {
+            "type": "palladium:command",
+            "icon": "minecraft:command_block",
+            "title": "null",
+            "bar_color": "light_gray",
+            "hidden": false,
+            "hidden_in_bar": false,
+            "list_index": -1,
+            "gui_position": "null",
+            "description": "null",
+            "first_tick_commands": [
+                "tag @s add tech_power"
+            ],
+            "last_tick_commands": [
+                "tag @s remove tech_power"
+            ],
+            "commands": [],
+            "conditions": {
+                "enabling": [],
+                "unlocking": []
+            }
+        },
+        "Suit Equip": {
+            "type": "palladium:command",
+            "icon": "minecraft:command_block",
+            "title": "Nanotech Suit",
+            "bar_color": "light_gray",
+            "hidden": false,
+            "hidden_in_bar": false,
+            "list_index": 0,
+            "gui_position": "null",
+            "description": "Equip your suit",
+            "first_tick_commands": [
+                "tag @s add titanium_tech_suit_on"
+            ],
+            "last_tick_commands": [
+                "tag @s remove titanium_tech_suit_on"
+            ],
+            "commands": [],
+            "conditions": {
+                "enabling": [
+                    {
+                        "type": "palladium:toggle",
+                        "cooldown": 0,
+                        "key_type": "key_bind",
+                        "needs_empty_hand": false,
+                        "allow_scrolling_when_crouching": true
+                    }
+                ],
+                "unlocking": []
+            }
+        },
+        "Suit Skin":{
+            "type": "palladium:skin_change",
+            "icon": "minecraft:blaze_rod",
+            "title": "null",
+            "bar_color": "light_gray",
+            "hidden": true,
+            "hidden_in_bar": true,
+            "list_index": -1,
+            "gui_position": "null",
+            "description": "null",
+            "texture": "minecraft:textures/entity/zombie/drowned.png",
+            "model_type": "keep",
+            "priority": 50,
+            "conditions": {
+                "enabling": [                {
+                                    "type": "palladium:has_tag",
+                                    "tag": "example_tag"
+                                }],
+                "unlocking": []
+            }
+        },
+        "Suit Bonus 1": {
+            "type": "palladium:attribute_modifier",
+            "icon": "minecraft:iron_chestplate",
+            "title": "null",
+            "bar_color": "light_gray",
+            "hidden": true,
+            "hidden_in_bar": true,
+            "list_index": -1,
+            "gui_position": "null",
+            "description": "null",
+            "attribute": "palladium:punch_damage",
+            "amount": 2.5,
+            "operation": 0,
+            "uuid": "498be4fb-af04-42f2-8948-e6ccdc0d99e1",
+            "conditions": {
+                "enabling": [
+                    {
+                        "type": "palladium:has_tag",
+                        "tag": "titanium_tech_suit_on"
+                    }
+                ],
+                "unlocking": []
+            }
+        },
+                "Suit Bonus 2": {
+            "type": "palladium:attribute_modifier",
+            "icon": "minecraft:iron_chestplate",
+            "title": "null",
+            "bar_color": "light_gray",
+            "hidden": true,
+            "hidden_in_bar": true,
+            "list_index": -1,
+            "gui_position": "null",
+            "description": "null",
+            "attribute": "minecraft:generic.armor",
+            "amount": 20,
+            "operation": 0,
+            "uuid": "498be4fb-af04-42f2-8948-e6ccdc0d99e1",
+            "conditions": {
+                "enabling": [
+                    {
+                        "type": "palladium:has_tag",
+                        "tag": "titanium_tech_suit_on"
+                    }
+                ],
+                "unlocking": []
+            }
+        },
+                        "Suit Bonus 3": {
+            "type": "palladium:attribute_modifier",
+            "icon": "minecraft:iron_chestplate",
+            "title": "null",
+            "bar_color": "light_gray",
+            "hidden": true,
+            "hidden_in_bar": true,
+            "list_index": -1,
+            "gui_position": "null",
+            "description": "null",
+            "attribute": "minecraft:generic.armor_toughness",
+            "amount": 8,
+            "operation": 0,
+            "uuid": "498be4fb-af04-42f2-8948-e6ccdc0d99e1",
+            "conditions": {
+                "enabling": [
+                    {
+                        "type": "palladium:has_tag",
+                        "tag": "titanium_tech_suit_on"
+                    }
+                ],
+                "unlocking": []
+            }
+        },
+                "Flight": {
+            "type": "palladium:attribute_modifier",
+            "icon": "minecraft:iron_chestplate",
+            "title": "Flight",
+            "bar_color": "light_blue",
+            "hidden": false,
+            "hidden_in_bar": true,
+            "list_index": -1,
+            "gui_position": "null",
+            "description": "Take to the skys.",
+            "attribute": "palladium:flight_speed",
+            "amount": 1,
+            "operation": 0,
+            "uuid": "498be4fb-af04-42f2-8948-e6ccdc0d99e1",
+            "conditions": {
+                "enabling": [],
+                "unlocking": []
+            }
+        },
         "Beam": {
             "type": "palladium:energy_beam",
             "icon": "hero_vs_villan_emerald1:textures/icons/titanium_tech_palladium_reactor_icon_kilonova.png",
@@ -39,25 +203,6 @@
                 ]
             }
         },
-        "Flight": {
-            "type": "palladium:attribute_modifier",
-            "icon": "minecraft:iron_chestplate",
-            "title": "Flight",
-            "bar_color": "light_blue",
-            "hidden": false,
-            "hidden_in_bar": true,
-            "list_index": -1,
-            "gui_position": "null",
-            "description": "Take to the skys.",
-            "attribute": "palladium:flight_speed",
-            "amount": 1,
-            "operation": 0,
-            "uuid": "498be4fb-af04-42f2-8948-e6ccdc0d99e1",
-            "conditions": {
-                "enabling": [],
-                "unlocking": []
-            }
-        },
         "Blast": {
             "type": "palladium:energy_beam",
             "icon": "minecraft:blaze_rod",
@@ -87,6 +232,62 @@
                         "needs_empty_hand": false
                     }
                 ],
+                "unlocking": []
+            }
+        },
+        "Mob Scan": {
+            "type": "palladium:command",
+            "icon": "minecraft:command_block",
+            "title": "Mob Scan",
+            "bar_color": "light_gray",
+            "hidden": false,
+            "hidden_in_bar": false,
+            "list_index": 1,
+            "gui_position": "null",
+            "description": "Scan for mobs to reveal them through walls",
+            "first_tick_commands": [
+                "/effect give @e[distance=1..14,tag=!mob_scan_proof] minecraft:glowing 15 0 true"
+            ],
+            "last_tick_commands": [],
+            "commands": [],
+            "conditions": {
+                "enabling": [
+                    {
+                        "type": "palladium:action",
+                        "cooldown": 600,
+                        "key_type": "key_bind",
+                        "needs_empty_hand": false,
+                        "allow_scrolling_when_crouching": true
+                    }
+                ],
+                "unlocking": []
+            }
+        },
+        "Speed Burst":{
+            "type": "palladium:command",
+            "icon": "minecraft:command_block",
+            "title": "Speed Boost",
+            "bar_color": "light_gray",
+            "hidden": false,
+            "hidden_in_bar": false,
+            "list_index": 2,
+            "gui_position": "null",
+            "description": "Use your tech to gain a burst of speed.",
+            "first_tick_commands": [
+                "effect give @s minecraft:speed 15 4 true"
+            ],
+            "last_tick_commands": [],
+            "commands": [],
+            "conditions": {
+                "enabling": [ 
+                                    {
+                                        "type": "palladium:action",
+                                        "cooldown": 450,
+                                        "key_type": "key_bind",
+                                        "needs_empty_hand": false,
+                                        "allow_scrolling_when_crouching": true
+                                    }
+                                ],
                 "unlocking": []
             }
         }

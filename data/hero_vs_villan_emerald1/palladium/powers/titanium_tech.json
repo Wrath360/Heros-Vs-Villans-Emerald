@@ -57,7 +57,7 @@
                 "unlocking": []
             }
         },
-        "Suit Skin":{
+        "Suit Skin": {
             "type": "palladium:skin_change",
             "icon": "minecraft:blaze_rod",
             "title": "null",
@@ -71,10 +71,12 @@
             "model_type": "keep",
             "priority": 50,
             "conditions": {
-                "enabling": [                {
-                                    "type": "palladium:has_tag",
-                                    "tag": "titanium_tech_suit_on"
-                                }],
+                "enabling": [
+                    {
+                        "type": "palladium:has_tag",
+                        "tag": "titanium_tech_suit_on"
+                    }
+                ],
                 "unlocking": []
             }
         },
@@ -102,7 +104,7 @@
                 "unlocking": []
             }
         },
-                "Suit Bonus 2": {
+        "Suit Bonus 2": {
             "type": "palladium:attribute_modifier",
             "icon": "minecraft:iron_chestplate",
             "title": "null",
@@ -126,7 +128,7 @@
                 "unlocking": []
             }
         },
-                        "Suit Bonus 3": {
+        "Suit Bonus 3": {
             "type": "palladium:attribute_modifier",
             "icon": "minecraft:iron_chestplate",
             "title": "null",
@@ -150,7 +152,7 @@
                 "unlocking": []
             }
         },
-                "Flight": {
+        "Flight": {
             "type": "palladium:attribute_modifier",
             "icon": "minecraft:iron_chestplate",
             "title": "Flight",
@@ -263,7 +265,7 @@
                 "unlocking": []
             }
         },
-        "Speed Burst":{
+        "Speed Burst": {
             "type": "palladium:command",
             "icon": "minecraft:command_block",
             "title": "Speed Boost",
@@ -279,15 +281,15 @@
             "last_tick_commands": [],
             "commands": [],
             "conditions": {
-                "enabling": [ 
-                                    {
-                                        "type": "palladium:action",
-                                        "cooldown": 450,
-                                        "key_type": "key_bind",
-                                        "needs_empty_hand": false,
-                                        "allow_scrolling_when_crouching": true
-                                    }
-                                ],
+                "enabling": [
+                    {
+                        "type": "palladium:action",
+                        "cooldown": 450,
+                        "key_type": "key_bind",
+                        "needs_empty_hand": false,
+                        "allow_scrolling_when_crouching": true
+                    }
+                ],
                 "unlocking": []
             }
         }

@@ -1,3 +1,5 @@
 {
-    "pack.hero_vs_villan_emerald1.name": "Heros Vs Villans:Emerald"
+    "pack.hero_vs_villan_emerald1.name": "Heros Vs Villans:Emerald",
+    "item.hero_vs_villan_emerald1.test_item.description": "Hold in the main hand",
+    "item.hero_vs_villan_emerald1.itemtest": "Test Item"
 }

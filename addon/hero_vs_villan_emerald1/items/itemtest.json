@@ -1,0 +1,15 @@
+{
+    "type": "palladium:default",
+    "max_stack_size": 1,
+    "creative_mode_tab": "minecraft:combat",
+    "rarity": "rare",
+    "is_fire_resistant": false,
+    "tooltip":[
+        "Test Item",
+        {
+            "translate": "item.hero_vs_villan_emerald1.test_item.description",
+            "color": "#0011FF",
+            "underlined": true
+        }
+    ]
+}

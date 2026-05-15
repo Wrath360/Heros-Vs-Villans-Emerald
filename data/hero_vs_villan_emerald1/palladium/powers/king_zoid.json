@@ -4,26 +4,22 @@
     "background": "minecraft:textures/block/yellow_wool.png",
     "icon": "minecraft:yellow_wool",
     "gui_display_type": "tree",
-    "abilities": {
-        "Giant Mode": {
+    "abilities":{
+        "Giant Mode":{
             "type": "palladium:size",
             "icon": "palladium:textures/icon/size.png",
             "title": "Giant Mode",
             "bar_color": "light_gray",
             "hidden": false,
-            "hidden_in_bar": false,
+            "hidden_in_bar": true,
             "list_index": -1,
             "gui_position": "null",
-            "description": "Increase your size",
+            "description": "Your naturally bigger then most",
             "scale": 2.5,
             "conditions": {
                 "enabling": [
                     {
-                        "type": "palladium:toggle",
-                        "cooldown": 0,
-                        "key_type": "key_bind",
-                        "needs_empty_hand": false,
-                        "allow_scrolling_when_crouching": true
+                        "type": "palladium:true"
                     }
                 ],
                 "unlocking": []
